@@ -114,18 +114,18 @@ float Numero_A ()
             system("cls");
         resultado_suma = primer_numero + segundo_numero;
         resultado_resta = primer_numero - segundo_numero;
+        resultado_multiplicacion = primer_numero * segundo_numero;
 
         if(segundo_numero != 0 && primer_numero != 0)
         {
             resultado_division = primer_numero / segundo_numero;
-            resultado_multiplicacion = primer_numero * segundo_numero;
             bandera = 1;
         }
         else
         {
             bandera = -1;
         }
-        if(primer_numero != 0)
+        if(primer_numero >= 0 && primer_numero <= 20)
             {
                 for(i=1;i<=primer_numero;i++)
                 {
@@ -141,14 +141,14 @@ float Numero_A ()
 
             printf("el resultado de la suma entre %.2f y %.2f es: %.2f\n\n",primer_numero,segundo_numero,resultado_suma);
             printf("el resultado de la resta entre %.2f y %.2f es: %.2f\n\n",primer_numero,segundo_numero,resultado_resta);
+            printf("el resultado de la multiplicacion entre %.2f y %.2f es: %.2f\n\n",primer_numero,segundo_numero,resultado_multiplicacion);
         if(bandera != -1)
         {
             printf("el resultado de la division entre %.2f y %.2f es: %.2f\n\n",primer_numero,segundo_numero,resultado_division);
-            printf("el resultado de la multiplicacion entre %.2f y %.2f es: %.2f\n\n",primer_numero,segundo_numero,resultado_multiplicacion);
         }
         else
         {
-            printf("las operaciones de multiplicacion y division no fueron posibles de realizarse.\n\n");
+            printf("las operacion de division no fue posible de ser realizada.\n\n");
         }
             if(segunda_bandera != -1)
             {
