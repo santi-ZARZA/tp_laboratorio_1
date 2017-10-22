@@ -15,8 +15,26 @@ int main()
     while(seguir=='s')
     {
         system("cls");
-        printf("1- Ingresar 1er operando (A=%.2f)\n",A);
-        printf("2- Ingresar 2do operando (B=%.2f)\n",B);
+
+            if(BanderaA != 0)
+            {
+                printf("1- Ingresar 1er operando (A= %.2f)\n",A);
+            }
+            else
+            {
+                printf("1- Ingresar 1er operando (A=Y)\n");
+            }
+
+            if(BanderaB != 0)
+            {
+                printf("2- Ingresar 2do operando (B= %.2f)\n",B);
+            }
+            else
+            {
+                printf("2- Ingresar 2do operando (B=X)\n");
+            }
+
+
         printf("3- Calcular la suma (A+B)\n");
         printf("4- Calcular la resta (A-B)\n");
         printf("5- Calcular la division (A/B)\n");
